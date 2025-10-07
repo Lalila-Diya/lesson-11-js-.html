@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert a JavaScript Object into JASON</h1>
+    <p id="r1"></p>
+    <p id="r2"></p>
+    <script>
+        var myobj=
+        {name:"Harry", age: "24", city:"NYC"}
+        var myjson=JSON.stringify(myobj)
+        document.getElementById("r1").innerHTML=myjson
+         var myjobj = JSON.parse(myjson)
+         document.getElementById("r2").innerHTML=myobj.name + " " + " "+ myobj.city
+    </script>
+</body>
+</html>
